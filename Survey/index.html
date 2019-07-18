@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 請定義問券名稱 -->
+    <title> 電影院觀看體驗問卷 </title>
+
+    <style type="text/css">
+        table,
+        th,
+        td {
+            border-width: 3px;
+            border-style: solid;
+            border-color:purple;
+            font-size: 25px;
+        }
+
+        body {
+            background-image: url("img/bg01.jpg");
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HTML5 新增了許多 <input> 的型態，請使用這些type，設計一份問卷 -->
+    <!-- http://www.w3schools.com/html/html_form_input_types.asp -->
+
+    <!-- 如果不知道該怎麼下手，請參考這個網站所設計的情境問卷找靈感 -->
+    <!-- https://technews.tw/2018/10/18/surveycake-situation-list/ -->
+
+    <!-- 底下是作業需要包含的項目 -->
+    <!-- 1. 問卷需包含 5-7 個問題 -->
+    <!-- 2. type 挑選時，請盡量不重複 -->
+    <!-- 3. 挑選 至少 1 個問題，設置 pattern 檢核 -->
+
+    <img src="img/01.jpg" alt="" style="height: 200px">
+    <h2>電影院觀看體驗</h2>
+    <form>
+        <div><label for="userName">姓名：</label>
+            <input type="text" name="" id="userName">
+        </div>
+        <div><label for="userPhone">電話：</label>
+            <input type="tel" name="" id="userPhone">
+        </div>
+        <div><label for="usermail">信箱：</label>
+            <input type="email" name="" id="usermail">
+        </div>
+        <div>
+            <label for="">性別：</label>
+            <input type="radio" name="sex" id="boy">
+            <label for="boy">男</label>
+            <input type="radio" name="sex" id="girl">
+            <label for="girl">女</label>
+        </div>
+        <div>
+            電影：
+            <input type="checkbox" name="movie" id="moive1">
+            <label for="moive1">
+                <img src="img/m1.jpg" alt="" style="height:100px">
+            </label>
+            <input type="checkbox" name="movie" id="moive2">
+            <label for="moive2">
+                <img src="img/m2.jpg" alt="" style="height:100px">
+            </label>
+            <input type="checkbox" name="movie" id="moive3">
+            <label for="moive3">
+                <img src="img/m3.jpg" alt="" style="height:100px">
+            </label>
+            <input type="checkbox" name="movie" id="moive4">
+            <label for="moive4">
+                <img src="img/m4.jpg" alt="" style="height:100px">
+            </label>
+            <input type="checkbox" name="movie" id="moive5">
+            <label for="moive5">
+                <img src="img/m5.jpg" alt="" style="height:100px">
+            </label>
+            <input type="checkbox" name="movie" id="other">
+            <label for="other">其他</label>
+        </div>
+        <table>
+            <tr>
+                <td>項目</td>
+                <td>很好</td>
+                <td>普通</td>
+                <td>差勁</td>
+            </tr>
+            <tr>
+                <td>座椅舒適度</td>
+                <td><input type="radio" name="seat" id=""></td>
+                <td><input type="radio" name="seat" id=""></td>
+                <td><input type="radio" name="seat" id=""></td>
+            </tr>
+            <tr>
+                <td>空調</td>
+                <td><input type="radio" name="air" id=""></td>
+                <td><input type="radio" name="air" id=""></td>
+                <td><input type="radio" name="air" id=""></td>
+            </tr>
+            <tr>
+                <td>服務人員態度</td>
+                <td><input type="radio" name="person" id=""></td>
+                <td><input type="radio" name="person" id=""></td>
+                <td><input type="radio" name="person" id=""></td>
+            </tr>
+            <tr>
+                <td>動線規劃</td>
+                <td><input type="radio" name="route" id=""></td>
+                <td><input type="radio" name="route" id=""></td>
+                <td><input type="radio" name="route" id=""></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
